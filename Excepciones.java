@@ -1,3 +1,4 @@
+// Excepciones personalizadas para el sistema de batalla
 class ObjetivoInvalidoException extends Exception {
     public ObjetivoInvalidoException(String msg) { super(msg); }
 }

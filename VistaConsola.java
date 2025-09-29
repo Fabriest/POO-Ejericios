@@ -1,5 +1,5 @@
 import java.util.*;
-
+//Implementación de la vista de consola
 public class VistaConsola implements Vista {
     private Scanner scanner = new Scanner(System.in);
 

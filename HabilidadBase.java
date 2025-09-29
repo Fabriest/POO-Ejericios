@@ -3,7 +3,7 @@ abstract class HabilidadBase implements HabilidadEspecial {
     protected String descripcion;
     protected int poder;
 
-    public HabilidadBase(String nombre, String descripcion, int poder) {
+    public HabilidadBase(String nombre, String descripcion, int poder) {//Constructor
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.poder = poder;

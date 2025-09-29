@@ -1,15 +1,15 @@
 import java.util.*;
-class Explorador extends Jugador {
+class Explorador extends Jugador {//Clase Explorador que hereda de Jugador
     public Explorador(String nombre) {
         super(nombre, 100, 15, "Explorador", 10);
     }
 
     @Override
-    public void tomarTurno(Batalla batalla, Vista vista) {
+    public void tomarTurno(Batalla batalla, Vista vista) {//Implementa la lógica del turno del Explorador
         String[] acciones = {"Atacar", "Usar ítem", "Pasar turno"};
         int opcion = vista.pedirAccionJugador(acciones);
 
-        try {
+        try {//Maneja las acciones del jugador según la opción elegida
             switch (opcion) {
                 case 0 -> {
                     List<Combatiente> enemigos = new ArrayList<>(batalla.getEnemigos());

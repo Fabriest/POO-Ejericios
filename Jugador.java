@@ -1,4 +1,4 @@
-abstract class Jugador extends Combatiente {
+abstract class Jugador extends Combatiente {//Clase abstracta Jugador que hereda de Combatiente
     protected Inventario inventario;
     protected String rol;
 
@@ -8,7 +8,7 @@ abstract class Jugador extends Combatiente {
         this.rol = rol;
     }
 
-    public void usarItem(Item item, Combatiente objetivo) throws ItemAgotadoException, ObjetivoInvalidoException {
+    public void usarItem(Item item, Combatiente objetivo) throws ItemAgotadoException, ObjetivoInvalidoException {//Usa un item del inventario
         inventario.usarItem(item.getNombre(), this, objetivo);
     }
 
